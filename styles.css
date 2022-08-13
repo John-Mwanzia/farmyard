@@ -81,23 +81,8 @@ body {
   }
 }
   
-.descript{
-    
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-        color:green;
-        font-weight: bold;
-        border: 3px solid #f1f1f1;
-        position: absolute;
-        top: 50px;
-        left: 50px;
-        transform: translate(-10%, -10%);
-        z-index: 2;
-        width: 50%;
-        padding: 20px;
-        text-align: center;
-      
-}
+
+
 /* The box-sizing property defines how the width and height of an element are calculated:
  should they include padding and borders, or not.
 box-sizing property to make sure that the box doesn't break due to extra padding */
@@ -112,8 +97,11 @@ box-sizing property to make sure that the box doesn't break due to extra padding
 }
 .about{
     margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #333;
       
 }
+
 
 .cows{
     height: 280px;
@@ -138,6 +126,7 @@ box-sizing property to make sure that the box doesn't break due to extra padding
 }
 .livestock{
   text-align: center;
+  color: #1c00b5;
 
 }
 #services{
@@ -146,9 +135,11 @@ box-sizing property to make sure that the box doesn't break due to extra padding
 }
 .milk_can_image{
   float: left;
-  max-width: 20%;
+  /* max-width: 40%; */
   border-radius: 3px;
   margin-right: 10px;
+  height: 250px;
+  width: 280px;
 }
 .manure{
 clear: left;
@@ -157,7 +148,7 @@ overflow: auto;
 }
 #manurejpg{
   height: 250px;
-  width: 400px; 
+  width: 280px; 
   border-radius: 3px;
   float: left;
   margin-right: 15px;
@@ -176,6 +167,7 @@ overflow: auto;
 .eggs_image{
   float: left;
   margin-right: 15px;
+  border-radius: 3px;
 
 }
 ul{
@@ -190,8 +182,81 @@ ul{
 .meatjpg{
   float: left;
   margin-right: 15px;
+  border-radius: 3px;
 }
 #contact{
   clear: left;
+  background-color: #55ffe5;
+ 
+  
 }
+.container{
+  width: 80% ;
+  margin: 50px auto;
+}
+.contact_box{
+  background-color: #fff;
+  display: flex;
+}
+@media screen  and (max-width: 600px) {
+.input_column{flex-wrap: wrap;} 
 
+  
+  
+}
+.contact_box_left{
+  flex-basis: 60%;
+  padding: 40px 60px;
+
+}
+.contact_box_right{
+  flex-basis: 40%;
+  padding: 40px 60px;
+  background: #1c00b5;
+  color: #fff;
+}
+#contact_start{
+
+  margin-bottom: 10px;
+}
+.input_column{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.input_column.input_details{
+flex-basis: 45%;
+}
+input{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding-bottom: 5px;
+  border-bottom: 1px  solid #ccc;
+}
+label{
+  color: #1c00b5;
+}
+#subject{
+  
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  
+}
+.submit{
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.submit:hover{
+  background-color: #45a049;
+}
