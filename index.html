@@ -51,54 +51,60 @@
     <div>
         <!-- what we offer interms of the livestock and their products -->
         <div id="services"> 
-            <h1>What we offer</h1>
+            <h1 style=" color: #1c00b5;">What we offer</h1>
            
         </div>
         <ul>
             <li>individual livestock</li>
             <li>Their products</li>
         </ul>
-    </div>
+    </div >
             <!-- livestock section -->
        
         <h1  class="livestock">Meet our livestock</h1>
        
-        <div class="about">
+    <div class="about">
        
          <div class="box">
             <img class="cows" src="images/cattle.jpg" alt="cattle"> 
             <h3>Dairy cattle</h3>
+            <p>price:Ksh.45000 per cow</p>
         </div>
          <div class="box"> 
             <img class="hens" src="images/free-range-hens.jpg" alt="">
             <h3>poultry</h3>
+            <p>Broiler price:Ksh.1200</p>
+            <p>layer price: Ksh.1000</p>
         </div>
          <div class="box">
             <img class="rabbits" src="images/rabbit1.jpg" alt="">
-            <h3>Rabbits</h3>
+            <h3>Rabbits </h3>
+            <p>price per Rabbit:Ksh.700</p>
         </div>
          
     </div>
     
 
-<div>
+<div id="product_section">
     <!-- product section -->
-    <h1>Their products</h1>
+    <h1 style="clear: left;text-align: center; color: #1c00b5;" >Their products</h1>
     <div>
-        <h2>Milk</h2>
+        
+        <h2 style=" color: #1c00b5;">Milk</h2>
        
-        <p>  <img class="milk_can_image" src="images/milk_cann.jpg" alt="milk">we have a constant and sufficient supply of milk which is able to satisfy all the customer milk orders</p>
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis quae veniam nam doloribus nihil totam, dolor sunt cumque itaque distinctio dolore rerum quia sed deleniti non eum quidem officia!</p>
+       
+     <p>  <img class="milk_can_image" src="images/milk_cann.jpg" alt="milk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officiis quae veniam nam doloribus nihil totam, dolor sunt cumque itaque distinctio dolore rerum quia sed deleniti non eum quidem officia!</p>
+     <p> we have a constant and sufficient supply of milk which is able to satisfy all the customer milk orders</p>
     </div>
     <div class="manure">
-        <h2>manure</h2>
+        <h2 style=" color: #1c00b5;">Manure</h2>
         <div>
             <img id="manurejpg" src="images/manure.jpeg" alt="manure">
         <p>cultivate your farms using the organic manure which is natural from our livestock and experience a tremendous shoot in your crop yield </p>
          <p>it has no side efffects on your crops since it is chemicals free.</p>
         </div>
     </div>
-    <h2>Eggs</h2>
+    <h2 style=" color: #1c00b5;">Eggs</h2>
     <div id="eggs">
         
         <div><img src="images/eggimage.jpg" class="eggs_image" alt="eggs">
@@ -108,7 +114,7 @@
     </div>
 
     <div>
-        <h2>Broilers meat</h2>
+        <h2 style=" color: #1c00b5;">Broilers meat</h2>
         <div id="meat">
            
             <div>
@@ -126,12 +132,66 @@
 </div>
 
 <div id="contact">
-    <h1>Contact</h1>
-    <h2>phone number: 0707979247</h2>
-    <h2>Email: Johnmwanzia277@gmail.com</h2>
+    <div class="container">
+        <h1 id="contact_start">Contact</h1>
+        <p>we would love to respond to all your enquiries</p>
+        <div class="contact_box">
+             <div class="contact_box_left"> 
+                <h3>send your request</h3>
+                <form action="">
+                    <div class="input_column">
+                        <div class="input_details">
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                        <div class="input_details" >
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your email..">
+                       </div>
+                        
+                    </div>
+                   
+                   <div class="input_column">
+                        <div class="input_details">
+                                  <label for="lname">Last Name:</label>
+                                   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                        
+                    
+                        <div class="input_details">
+                              <label for="country">County:</label>
+                              <input type="text" id="county" name="county" placeholder="Your county..">
+                        </div>
+                   </div>
+                    
+                    
+                    <div>
+                        <label for="subject">Message:</label><br>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        
+                    </div>
+                   
+                
+                    <div>
+                      
+                        <button class="submit" type="submit"> Submit</button>
+                    </div>
+                
+                   
+                  </form>
 
-    <a href="">Message</a>
-</div>
+             </div>
+             <div class="contact_box_right">
+                <h3>Reach us</h3>
+                <h2>phone number: 0707979247</h2>
+                 <h2>Email: Johnmwanzia277@gmail.com</h2>
+
+             </div>
+        </div>
+
+    </div>
     
+    
+</div>
 </body>
 </html>
