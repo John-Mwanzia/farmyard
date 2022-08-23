@@ -1,4 +1,4 @@
-body {
+ body {
   /* margin: 0; */
   font-family: Arial, Helvetica, sans-serif;
 
@@ -6,16 +6,16 @@ body {
 
 #name{
     color: orangered;
+    margin-left: 30px;
+   
+    
 }
 .homepage{
-    height: 600px;
+     height: 630px; 
     width: 100%;
-    background-image: url(images/cows.jpg); 
-    /* filter: blur(2px);
+    background-image: url(images/cows.jpg);  
+    /* filter: blur(5px);
    -webkit-filter: blur(2px); */
-
-  /* Full height */
-  /* height: 100%; */
 
   /* Center and scale the image nicely */
     background-position: center; 
@@ -28,19 +28,19 @@ body {
     background-color: #333;
     overflow: hidden;
     margin-bottom: 10px;
-    /* display: flex;
-    justify-content: end; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
     color: #f2f2f2;
-    text-align: center;
-    display: block;
-    padding: 14px 16px;
+     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    margin-left: 15px;
+    font-size: 17px; 
   }
   
   /* Change the color of links on hover */
@@ -51,16 +51,17 @@ body {
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #04AA6D;
+    /* background-color: #04AA6D; */
     color: white;
   }
 
   /* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+.topnav .icon { 
   display: none;
+
 }
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a{display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -95,19 +96,33 @@ box-sizing property to make sure that the box doesn't break due to extra padding
   text-align: center;
   
 }
-.about{
+#about_container_details{
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #333;
+
+ 
+   
+    
       
 }
+.about_container{
 
+  margin: 50px auto;
+  /* background-color: #04AA6D; */
+  
+  
+}
+
+ #About h2 {
+  color: #1c00b5;
+ }
 
 .cows{
     height: 280px;
     /* width: 300px; */ 
   
     border-radius: 3px;
+    
 }
 .hens{
     height: 280px;
@@ -129,10 +144,9 @@ box-sizing property to make sure that the box doesn't break due to extra padding
   color: #1c00b5;
 
 }
-#services{
-  text-align: center;
 
-}
+
+
 .milk_can_image{
   float: left;
   /* max-width: 40%; */
@@ -150,7 +164,7 @@ overflow: auto;
   height: 250px;
   width: 280px; 
   border-radius: 3px;
-  float: left;
+  float: right;
   margin-right: 15px;
  
   border: black;
@@ -178,11 +192,13 @@ ul{
   overflow: auto;
   display: flex;
   flex-wrap: nowrap;
+  
 }
 .meatjpg{
-  float: left;
+  float: right;
   margin-right: 15px;
   border-radius: 3px;
+ 
 }
 #contact{
   clear: left;
@@ -259,4 +275,10 @@ label{
 }
 .submit:hover{
   background-color: #45a049;
+}
+table tr td{
+  padding-right: 20px;
+}
+#contact_title{
+margin-left: 30px;
 }
