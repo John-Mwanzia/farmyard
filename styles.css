@@ -163,59 +163,88 @@ figure{
 
 }
 
+.first-section{
+  display: flex;
+  margin-bottom: 60px;
+   margin-left: 10px;
+   margin-right: 10px;
 
+
+}
+.second-section{
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
 
 .milk_can_image{
-  float: left;
-  /* max-width: 40%; */
-  border-radius: 3px;
-  margin-right: 10px;
-  height: 250px;
-  width: 280px;
+  height: 15rem;
+  border-radius: 5px;
+  margin-left: 160px;
+
+   
+}
+.milk{
+  background-color: #D9DCE1;
+  padding: 20px;
+  width: 50%;
+  transform: scale(0.95);
+  transition: 0.3s ease-in-out;  
+}
+.milk:hover{
+  transform: scale(1);
 }
 .manure{
-clear: left;
-overflow: auto;
+  background-color:  #D9DCE1;
+  padding: 20px;
+  width: 50%;
+  transform: scale(0.95);
+  transition: 0.3s ease-in-out;  
   
+}
+.manure:hover{
+  transform: scale(1);
 }
 #manurejpg{
-  height: 250px;
-  width: 280px; 
-  border-radius: 3px;
-  float: right;
-  margin-right: 15px;
- 
-  border: black;
-
-
+  height: 15rem;
+  border-radius: 5px;
+  margin-left: 100px;
 }
 #eggs{
-  clear: left;
-  overflow: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  
+  background-color: bisque;
+  padding: 20px;
+  transform: scale(0.95);
+  transition: 0.3s ease-in-out;  
+ 
+}
+#eggs:hover{
+  transform: scale(1);
 }
 .eggs_image{
-  float: left;
-  margin-right: 15px;
-  border-radius: 3px;
+  border-radius: 5px;
+  margin-left: 150px;
+  height: 15rem;
 
 }
 ul{
   font-size: x-large;
 }
 #meat{
-  clear: left;
-  overflow: auto;
-  display: flex;
-  flex-wrap: nowrap;
+  background-color: bisque;
+  padding: 20px;
+  transform: scale(0.95);
+  transition: 0.3s ease-in-out; 
   
 }
+#meat:hover{
+  transform: scale(1);
+}
 .meatjpg{
-  float: right;
-  margin-right: 15px;
-  border-radius: 3px;
+  border-radius: 5px;
+  margin-left: 150px;
+  height: 15rem;
+
  
 }
 #contact{
@@ -298,5 +327,6 @@ table tr td{
   padding-right: 20px;
 }
 #contact_title{
-margin-left: 30px;
+text-align: center;
+
 }
