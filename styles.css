@@ -94,6 +94,7 @@ box-sizing property to make sure that the box doesn't break due to extra padding
   width: 33.33%;
   float: left;
   text-align: center;
+ 
   
 }
 #about_container_details{
@@ -119,25 +120,42 @@ box-sizing property to make sure that the box doesn't break due to extra padding
 
 .cows{
     height: 280px;
-    /* width: 300px; */ 
-  
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
     border-radius: 3px;
+   
+   
     
+}
+.cows:hover{
+  transform: scale(1.1);
 }
 .hens{
     height: 280px;
-    width: 455px; 
-  
+    width: 470px; 
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
     border-radius: 3px;
+ 
+}
+.hens:hover{
+  transform: scale(1.1);
 }
 
 .rabbits{
      height: 280px;
-     width: 420px; 
+     width: 440px; 
      border-radius: 3px;
-     margin-left: 20px;
-     
+     transform: scale(1);
+    transition: 0.3s ease-in-out;
    
+   
+}
+.rabbits:hover{
+  transform: scale(1.1);
+}
+figure{
+  margin: 0 10px;
 }
 .livestock{
   text-align: center;
