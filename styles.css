@@ -48,12 +48,7 @@
     background-color: #ddd;
     color: black;
   }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    /* background-color: #04AA6D; */
-    color: white;
-  }
+ 
 
   /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon { 
@@ -163,32 +158,34 @@ figure{
 
 }
 
-.first-section{
+.products{
   display: flex;
   margin-bottom: 60px;
-   margin-left: 10px;
-   margin-right: 10px;
+   justify-content: center;
+   gap: 5px;
+   overflow: hidden;
+   align-items: center;
 
 
 }
-.second-section{
-  display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
 
-}
+
+
 
 .milk_can_image{
-  height: 15rem;
+  height: 11rem;
   border-radius: 5px;
-  margin-left: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 
    
 }
 .milk{
-  background-color: #D9DCE1;
+  /* background-color: #D9DCE1; */
   padding: 20px;
-  width: 50%;
+  width: 25%;
+  border-radius: 5px;
   transform: scale(0.95);
   transition: 0.3s ease-in-out;  
 }
@@ -196,9 +193,11 @@ figure{
   transform: scale(1);
 }
 .manure{
-  background-color:  #D9DCE1;
+
   padding: 20px;
-  width: 50%;
+  width: 25%;
+  border-radius: 5px;
+ 
   transform: scale(0.95);
   transition: 0.3s ease-in-out;  
   
@@ -207,13 +206,18 @@ figure{
   transform: scale(1);
 }
 #manurejpg{
-  height: 15rem;
+  height: 11rem;
   border-radius: 5px;
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; 
+
 }
 #eggs{
-  background-color: bisque;
+ 
   padding: 20px;
+  border-radius: 5px;
+  width: 25%;
   transform: scale(0.95);
   transition: 0.3s ease-in-out;  
  
@@ -223,16 +227,20 @@ figure{
 }
 .eggs_image{
   border-radius: 5px;
-  margin-left: 150px;
-  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 11rem;
 
 }
 ul{
   font-size: x-large;
 }
 #meat{
-  background-color: bisque;
+
   padding: 20px;
+  border-radius: 5px;
+  width: 25%;
   transform: scale(0.95);
   transition: 0.3s ease-in-out; 
   
@@ -242,8 +250,11 @@ ul{
 }
 .meatjpg{
   border-radius: 5px;
-  margin-left: 150px;
-  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 11rem;
+
 
  
 }
@@ -312,7 +323,7 @@ label{
     resize: vertical;
   
 }
-.submit{
+/* .submit{
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -322,7 +333,114 @@ label{
 }
 .submit:hover{
   background-color: #45a049;
+} */
+
+.container  a {
+  position: relative;
+  display: inline-block;
+ padding: 10px 20px;
+  color: #1da4f2;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 0px;
+  letter-spacing: 4px; 
+
 }
+
+.container a:hover{
+  background-color: #04AA6D;
+  color: #fff;
+  border-radius: 5px;
+  /* box-shadow: 0 0 5px #04AA6D,
+              0 0 25px #1da4f2,
+              0 0 50px #04AA6D,
+              0 0 100px #04AA6D; */
+
+
+} 
+
+.container a span{
+  position: absolute;
+ display: block;  
+}
+.container a span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #1da4f2);
+  animation: btn-anim1 .5s linear infinite;
+}
+
+@keyframes btn-anim1{
+  0%{
+      left: -100%;
+  }
+  50%,100%{
+      left: 100%;
+  }
+}
+
+.container a span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#1da4f2);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s;
+}
+
+@keyframes btn-anim2{
+  0%{
+      top: -100%;
+  }
+  50%,100%{
+      top: 100%;
+  }
+}
+
+
+.container a span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,#03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s;
+}
+
+@keyframes btn-anim3{
+  0%{
+      right: -100%;
+  }
+  50%,100%{
+      right: 100%;
+  }
+}
+
+.container a span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#1da4f2);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s;
+}
+
+@keyframes btn-anim4{
+  0%{
+  bottom: -100%;
+  }
+  50%,100%{
+      bottom: 100%;
+  }
+}  
 table tr td{
   padding-right: 20px;
 }
