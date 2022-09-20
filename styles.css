@@ -48,12 +48,7 @@
     background-color: #ddd;
     color: black;
   }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    /* background-color: #04AA6D; */
-    color: white;
-  }
+ 
 
   /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon { 
@@ -163,32 +158,34 @@ figure{
 
 }
 
-.first-section{
+.products{
   display: flex;
   margin-bottom: 60px;
-   margin-left: 10px;
-   margin-right: 10px;
+   justify-content: center;
+   gap: 5px;
+   overflow: hidden;
+   align-items: center;
 
 
 }
-.second-section{
-  display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
 
-}
+
+
 
 .milk_can_image{
-  height: 15rem;
+  height: 11rem;
   border-radius: 5px;
-  margin-left: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 
    
 }
 .milk{
-  background-color: #D9DCE1;
+  /* background-color: #D9DCE1; */
   padding: 20px;
-  width: 50%;
+  width: 25%;
+  border-radius: 5px;
   transform: scale(0.95);
   transition: 0.3s ease-in-out;  
 }
@@ -196,9 +193,11 @@ figure{
   transform: scale(1);
 }
 .manure{
-  background-color:  #D9DCE1;
+
   padding: 20px;
-  width: 50%;
+  width: 25%;
+  border-radius: 5px;
+ 
   transform: scale(0.95);
   transition: 0.3s ease-in-out;  
   
@@ -207,13 +206,18 @@ figure{
   transform: scale(1);
 }
 #manurejpg{
-  height: 15rem;
+  height: 11rem;
   border-radius: 5px;
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; 
+
 }
 #eggs{
-  background-color: bisque;
+ 
   padding: 20px;
+  border-radius: 5px;
+  width: 25%;
   transform: scale(0.95);
   transition: 0.3s ease-in-out;  
  
@@ -223,16 +227,20 @@ figure{
 }
 .eggs_image{
   border-radius: 5px;
-  margin-left: 150px;
-  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 11rem;
 
 }
 ul{
   font-size: x-large;
 }
 #meat{
-  background-color: bisque;
+
   padding: 20px;
+  border-radius: 5px;
+  width: 25%;
   transform: scale(0.95);
   transition: 0.3s ease-in-out; 
   
@@ -242,8 +250,11 @@ ul{
 }
 .meatjpg{
   border-radius: 5px;
-  margin-left: 150px;
-  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 11rem;
+
 
  
 }
