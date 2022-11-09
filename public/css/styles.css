@@ -13,7 +13,7 @@
 .homepage{
      height: 630px; 
     width: 100%;
-    background-image: url(images/cows.jpg);  
+    background-image: url(/images/cows.jpg);  
     /* filter: blur(5px);
    -webkit-filter: blur(2px); */
 
@@ -101,6 +101,11 @@ box-sizing property to make sure that the box doesn't break due to extra padding
     
       
 }
+
+#services{
+  background-color: #f6f9fc;
+
+}
 .about_container{
 
   margin: 50px auto;
@@ -165,6 +170,7 @@ figure{
    gap: 5px;
    overflow: hidden;
    align-items: center;
+   background-color: #f6f9fc;
 
 
 }
@@ -447,4 +453,8 @@ table tr td{
 #contact_title{
 text-align: center;
 
+}
+
+footer{
+  text-align: center;
 }
