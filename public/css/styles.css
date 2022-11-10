@@ -278,12 +278,12 @@ ul{
   background-color: #fff;
   display: flex;
 }
-@media screen  and (max-width: 600px) {
+/* @media screen  and (max-width: 600px) {
 .input_column{flex-wrap: wrap;} 
 
+   */
   
-  
-}
+/* } */
 .contact_box_left{
   flex-basis: 60%;
   padding: 40px 60px;
@@ -317,7 +317,7 @@ input{
 label{
   color: #1c00b5;
 }
-#subject{
+#message{
   
     width: 100%;
     padding: 12px;
@@ -329,7 +329,7 @@ label{
     resize: vertical;
   
 }
-/* .submit{
+.submit{
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -339,7 +339,7 @@ label{
 }
 .submit:hover{
   background-color: #45a049;
-} */
+}
 
 .container  a {
   position: relative;

@@ -136,15 +136,15 @@
         <div class="contact_box">
              <div class="contact_box_left"> 
                 <h3>send your request</h3>
-                <form action="/" method="post">
+                <form  action="/" method="post">
                     <div class="input_column">
                         <div class="input_details">
                             <label for="fname">First Name:</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
                         </div>
                         <div class="input_details" >
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Your email..">
+                            <input type="email" id="email" name="email" placeholder="Your email.." required>
                        </div>
                         
                     </div>
@@ -157,15 +157,15 @@
                         
                     
                         <div class="input_details">
-                              <label for="country">County:</label>
-                              <input type="text" id="county" name="county" placeholder="Your county..">
+                              <label for="subject">Subject:</label>
+                              <input type="text" id="subject" name="subject" placeholder="Enter enquiry subject.." required>
                         </div>
                    </div>
                     
                     
                     <div>
-                        <label for="subject">Message:</label><br>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" placeholder="Write something.." required style="height:200px"></textarea>
                         
                     </div>
                    
@@ -173,15 +173,15 @@
                     <div>
                       
                         <div class="container">
-                            <button type="submit">
+                            <button class="submit" type="submit">
 
-                                <a href="#">
+                            
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     Submit
-                                   </a> 
+                                   
                             </button>
                            
                         </div>
@@ -222,6 +222,7 @@
     <p>Created by mr.Jones✔</p>
 </footer>
 
+<!-- onsubmit="sendEmail(); reset(); return false;" -->
 <!-- <script>
     function setYear(){
         const date = new Date();
@@ -231,5 +232,27 @@
     }
 </script> -->
 <!-- <script src="task.js"></script> -->
+<!-- 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "johnmwanzia277@gmail.com",
+    Password : "0E39CB2E0815B7DAA067EFB248877465AD6D",
+    To : 'johnmwanzia277@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Enquiry form",
+    Body : "first name: " +  document.getElementById("firstname").value
+           + " <br> last name: " +  document.getElementById("lastname").value
+           + " <br> County: " +  document.getElementById("county").value
+           + " <br> Subject: " +  document.getElementById("subject").value
+}).then(
+  message => alert("message sent successfully")
+).catch(err=> alert(err))
+;
+    }
+</script> -->
 </body>
 </html>
