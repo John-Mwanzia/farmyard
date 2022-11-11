@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+// const alert = require('alert'); 
 const app = express()
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static("public" ))
@@ -16,6 +17,7 @@ app.post("/", function(req, res){
     const subject = req.body.subject
     const message= req.body.message
 
+    console.log(email);
 
     var transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -27,9 +29,11 @@ app.post("/", function(req, res){
       
       var mailOptions = {
         from: email,
-        to: 'jmwanzia@kabarak.ac.ke',
+        to: 'smartfarmyard838@gmail.com',
         subject: subject,
-        text: message
+        // text: "Message: " +  message ,
+        html: "From : "+ fName+"<br> "+ "Email : " + email + " <br>" + "Message : " +  message
+
       };
       
       transporter.sendMail(mailOptions, function(error, info){
@@ -37,7 +41,7 @@ app.post("/", function(req, res){
           console.log(error);
         } else {
           console.log('Email sent: ' + info.response);
-          res.send("hello" + " " + fName + " " + lName +  " " + "Your request submitted successfuly")
+        res.send( "<h1>hello</h1>" + " " + fName + " " + lName +  " " + "<h1>Your request submitted successfuly</h1>")
         }
       });
 
