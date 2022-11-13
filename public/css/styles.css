@@ -349,8 +349,7 @@ footer{
  
 }
 
-/* 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 662px) {
   .topnav a{display: none;}
   .topnav a.icon {
     float: right;
@@ -358,7 +357,7 @@ footer{
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 662px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -368,7 +367,14 @@ footer{
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: right;
+
+    
+   
   }
-} */
+  .topnav.responsive a:first-child{
+    margin-top: 40px;
+  }
+}
+
   
