@@ -27,7 +27,7 @@ body {
   /* Center and scale the image nicely */
     background-position: center; 
   background-repeat: no-repeat;
-   background-size: cover;  
+   background-size:cover;
 }
 
 /* Add a black background color to the top navigation */
@@ -63,14 +63,6 @@ body {
 
 }
 
-.box{
-  width: 33.33%;
-   float: left; 
-  text-align: center;
-  
- 
-  
-}
 #about_container_details{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -79,6 +71,11 @@ body {
 
 .about_container{
   margin: 50px auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 0px;
+  flex-wrap: wrap;
  
 }
 
@@ -87,7 +84,7 @@ body {
  }
 
 .cows{
-    height: 280px;
+    /* height: 280px; */
     transform: scale(1);
     transition: 0.3s ease-in-out;
     border-radius: 3px;
@@ -99,8 +96,8 @@ body {
   transform: scale(1.1);
 }
 .hens{
-    height: 280px;
-    width: 470px; 
+    height: 268px;
+    width: 400px; 
     transform: scale(1);
     transition: 0.3s ease-in-out;
     border-radius: 3px;
@@ -111,8 +108,7 @@ body {
 }
 
 .rabbits{
-     height: 280px;
-     width: 440px; 
+
      border-radius: 3px;
      transform: scale(1);
     transition: 0.3s ease-in-out;
@@ -124,6 +120,7 @@ body {
 }
 figure{
   margin: 0 10px;
+
 }
 .livestock{
   text-align: center;
@@ -134,11 +131,12 @@ figure{
 .products{
   display: flex;
   margin-bottom: 60px;
-   justify-content: center;
+  justify-content: center;
    gap: 5px;
    overflow: hidden;
    align-items: center;
    background-color: #f6f9fc;
+   
 
 
 }
@@ -345,7 +343,26 @@ footer{
     width: 100%;
   }
 
+  .about_container{
+  flex-direction: column;
+    
+    }
 
+.cows{
+   width: 100%;
+   height: auto;
+  }
+.hens{
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+.rabbits{
+  width: 100%;
+  height: auto;
+}
  
 }
 
