@@ -72,9 +72,9 @@ body {
 .about_container{
   margin: 50px auto;
   display: flex;
-  align-items: center;
+  justify-content: center;
   text-align: center;
-  flex: 1 1 0px;
+  flex: 1;
   flex-wrap: wrap;
  
 }
@@ -84,7 +84,6 @@ body {
  }
 
 .cows{
-    /* height: 280px; */
     transform: scale(1);
     transition: 0.3s ease-in-out;
     border-radius: 3px;
@@ -130,36 +129,23 @@ figure{
 
 .products{
   display: flex;
+  flex: 1;
   margin-bottom: 60px;
   justify-content: center;
-   gap: 5px;
-   overflow: hidden;
-   align-items: center;
    background-color: #f6f9fc;
-   
-
-
+   flex-wrap: wrap;
+   text-align: center;
 }
-
-
-
-
 .milk_can_image{
   height: 11rem;
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-
-   
+  border-radius: 5px; 
 }
 .milk{
-  /* background-color: #D9DCE1; */
   padding: 20px;
-  width: 25%;
   border-radius: 5px;
   transform: scale(0.95);
-  transition: 0.3s ease-in-out;  
+  transition: 0.3s ease-in-out; 
+  width: min-content; 
 }
 .milk:hover{
   transform: scale(1);
@@ -167,12 +153,10 @@ figure{
 .manure{
 
   padding: 20px;
-  width: 25%;
   border-radius: 5px;
- 
   transform: scale(0.95);
   transition: 0.3s ease-in-out;  
-  
+  width: min-content;
 }
 .manure:hover{
   transform: scale(1);
@@ -180,18 +164,14 @@ figure{
 #manurejpg{
   height: 11rem;
   border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block; 
-
 }
 #eggs{
  
   padding: 20px;
   border-radius: 5px;
-  width: 25%;
   transform: scale(0.95);
   transition: 0.3s ease-in-out;  
+  width: min-content;
  
 }
 #eggs:hover{
@@ -201,20 +181,16 @@ figure{
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  height: 11rem;
 
 }
-ul{
-  font-size: x-large;
-}
+
 #meat{
 
   padding: 20px;
   border-radius: 5px;
-  width: 25%;
   transform: scale(0.95);
   transition: 0.3s ease-in-out; 
+  width: min-content;
   
 }
 #meat:hover{
@@ -224,17 +200,13 @@ ul{
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  height: 11rem;
+}
 
-
- 
+ul{
+  font-size: x-large;
 }
 #contact{
-  clear: left;
   background-color: #55ffe5;
- 
-  
 }
 .container{
   width: 80% ;
@@ -243,18 +215,20 @@ ul{
 .contact_box{
   background-color: #fff;
   display: flex;
+  flex: 1;
 }
 
 .contact_box_left{
-  flex-basis: 60%;
+  /* flex-basis: 60%; */
   padding: 40px 60px;
 
 }
 .contact_box_right{
-  flex-basis: 40%;
+  /* flex-basis: 40%; */
   padding: 40px 60px;
   background: #1c00b5;
   color: #fff;
+  
 }
 #contact_start{
 
@@ -302,9 +276,7 @@ label{
   background-color: #45a049;
 }
 
-table tr td{
-  padding-right: 20px;
-}
+
 #contact_title{
 text-align: center;
 
@@ -325,9 +297,9 @@ footer{
   .input_column{
    flex-direction: column;
   }
-  .contact_box{
+  /* .contact_box{
     flex-direction: column;
-  }
+  } */
 
   .milk{
     width: 100%;
@@ -345,11 +317,14 @@ footer{
 
   .about_container{
   flex-direction: column;
+  justify-content: normal;
+  flex-wrap: nowrap;
+ 
     
     }
 
 .cows{
-   width: 100%;
+  max-width: 100%;
    height: auto;
   }
 .hens{
@@ -360,10 +335,25 @@ footer{
 
 
 .rabbits{
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
+
+.contact_box_right{
+  font-size: .5rem;
+}
+
+
  
+/* .contact_box_right{
+  flex-basis: auto;
+  display: flex;
+  width: min-content;
+} */
+
+/* .container{
+  width: 100%;
+} */
 }
 
 @media screen and (max-width: 662px) {
@@ -394,4 +384,9 @@ footer{
   }
 }
 
-  
+ 
+@media screen and (max-width: 1066px) {
+  .contact_box{
+   flex-direction: column;
+  }
+}
