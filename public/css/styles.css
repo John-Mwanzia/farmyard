@@ -11,7 +11,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
-
+  background-color: #f6f9fc;
 }
 
 #name{
@@ -132,7 +132,7 @@ figure{
   flex: 1;
   margin-bottom: 60px;
   justify-content: center;
-   background-color: #f6f9fc;
+   color: #445d6e;
    flex-wrap: wrap;
    text-align: center;
 }
@@ -142,24 +142,37 @@ figure{
 }
 .milk{
   padding: 20px;
-  border-radius: 5px;
-  transform: scale(0.95);
-  transition: 0.3s ease-in-out; 
+  /* transform: scale(0.95); */
+  /* transition: 0.3s ease-in-out;  */
+  transition: box-shadow .3s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: box-shadow;
+
   width: min-content; 
 }
 .milk:hover{
-  transform: scale(1);
+  /* transform: scale(1); */
+  box-shadow: 0 0 35px -2px rgb(0, 0, 0 , 20%);
+  cursor: pointer;
 }
 .manure{
 
   padding: 20px;
-  border-radius: 5px;
-  transform: scale(0.95);
-  transition: 0.3s ease-in-out;  
+  /* transform: scale(0.95); */
+  transition: box-shadow .3s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: box-shadow;
+
   width: min-content;
 }
 .manure:hover{
-  transform: scale(1);
+  /* transform: scale(1); */
+  box-shadow: 0 0 35px -2px rgb(0, 0, 0 , 20%);
+  cursor: pointer;
 }
 #manurejpg{
   height: 11rem;
@@ -168,14 +181,20 @@ figure{
 #eggs{
  
   padding: 20px;
-  border-radius: 5px;
-  transform: scale(0.95);
-  transition: 0.3s ease-in-out;  
+  /* transform: scale(0.95); */
+  transition: box-shadow .3s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: box-shadow;
+  
   width: min-content;
  
 }
 #eggs:hover{
-  transform: scale(1);
+  /* transform: scale(1); */
+  box-shadow: 0 0 35px -2px rgb(0, 0, 0 , 20%);
+  cursor: pointer;
 }
 .eggs_image{
   border-radius: 5px;
@@ -187,14 +206,21 @@ figure{
 #meat{
 
   padding: 20px;
-  border-radius: 5px;
-  transform: scale(0.95);
-  transition: 0.3s ease-in-out; 
+  /* transform: scale(0.95); */
+  /* transition: 0.3s ease-in-out;  */
+  transition: box-shadow .3s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: box-shadow;
+
   width: min-content;
   
 }
 #meat:hover{
-  transform: scale(1);
+  /* transform: scale(1); */
+  box-shadow: 0 0 35px -2px rgb(0, 0, 0 , 20%);
+  cursor: pointer;
 }
 .meatjpg{
   border-radius: 5px;
@@ -343,17 +369,6 @@ footer{
   font-size: .5rem;
 }
 
-
- 
-/* .contact_box_right{
-  flex-basis: auto;
-  display: flex;
-  width: min-content;
-} */
-
-/* .container{
-  width: 100%;
-} */
 }
 
 @media screen and (max-width: 662px) {
