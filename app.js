@@ -4,20 +4,18 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 // const alert = require('alert'); 
 const app = express()
-app.use(bodyParser.urlencoded({extended:true}))
-app.use(express.static("public" ))
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(express.static("public" ));
 app.get("/", function(req, res){
     res.sendFile((__dirname + "/index.html"));
 });
 
 app.post("/", function(req, res){
-    const fName = req.body.firstname
-    const lName = req.body.lastname
-    const email = req.body.email
-    const subject = req.body.subject
-    const message= req.body.message
-
-    console.log(email);
+    const fName = req.body.firstname;
+    const lName = req.body.lastname;
+    const email = req.body.email;
+    const subject = req.body.subject;
+    const message= req.body.message;
 
     var transporter = nodemailer.createTransport({
         service: 'gmail',

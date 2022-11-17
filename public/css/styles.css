@@ -21,7 +21,8 @@ body {
     
 }
 .homepage{
-     height: 630px; 
+     /* height: 630px;  */
+     min-height: 90vh;
     width: 100%;
     background-image: url(/images/cows.jpg);  
   /* Center and scale the image nicely */
@@ -117,7 +118,7 @@ body {
 .rabbits:hover{
   transform: scale(1.1);
 }
-figure{
+.about_container figure{
   margin: 0 10px;
 
 }
@@ -316,6 +317,12 @@ footer{
   body{
     overflow-x: hidden;
   }
+  #name{
+    margin-left: 0px;
+   
+    
+}
+
   .products{
     flex-direction: column;
 
@@ -323,9 +330,6 @@ footer{
   .input_column{
    flex-direction: column;
   }
-  /* .contact_box{
-    flex-direction: column;
-  } */
 
   .milk{
     width: 100%;
@@ -404,4 +408,17 @@ footer{
   .contact_box{
    flex-direction: column;
   }
+}
+
+@media screen and (max-width:390px){
+  #name{
+   font-size: 1.5em;
+}
+}
+
+
+@media screen and (max-width:280px){
+  #name{
+   font-size: 1.1em;
+}
 }
