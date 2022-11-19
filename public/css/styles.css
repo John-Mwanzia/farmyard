@@ -306,11 +306,15 @@ label{
 
 #contact_title{
 text-align: center;
+text-decoration: underline;
 
 }
 
 footer{
   text-align: center;
+}
+footer p {
+  color: #ccc;
 }
 
 @media screen and (max-width:600px){
