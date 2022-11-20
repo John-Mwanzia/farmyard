@@ -317,6 +317,26 @@ footer p {
   color: #ccc;
 }
 
+/* success page  and failure page*/
+.success-failure{
+ margin-top: 1rem;
+ margin-left: auto;
+ margin-right: auto;
+  text-align: center;
+  background-color: gray;
+ padding-top: 10px;
+ padding-bottom: 20px;
+}
+
+.success-failure button{
+  background-color: #f0ad4e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media screen and (max-width:600px){
   body{
     overflow-x: hidden;
