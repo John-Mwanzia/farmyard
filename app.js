@@ -37,9 +37,10 @@ app.post("/", function(req, res){
       transporter.sendMail(mailOptions, function(error, info){
         if (error) {
           console.log(error);
+          res.sendFile(__dirname + "/failure.html");
         } else {
           console.log('Email sent: ' + info.response);
-        res.send( "<h1>hello</h1>" + " " + fName + " " + lName +  " " + "<h1>Your request submitted successfuly</h1>")
+        res.sendFile(__dirname + "/success.html");
         }
       });
 
