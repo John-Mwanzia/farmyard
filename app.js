@@ -37,9 +37,11 @@ app.post("/", function(req, res){
       transporter.sendMail(mailOptions, function(error, info){
         if (error) {
           console.log(error);
+          //error page
           res.sendFile(__dirname + "/failure.html");
         } else {
           console.log('Email sent: ' + info.response);
+          //success page
         res.sendFile(__dirname + "/success.html");
         }
       });
@@ -48,6 +50,17 @@ app.post("/", function(req, res){
 
 })
 
+//redirect to homepage after submitting request succsess
+
+app.post("/success", function(req,res){
+  res.redirect("/");
+});
+
+
+// redirect to homepage and specific to the contact section after any error
+app.post("/failure", function(req,res){
+  res.redirect("/#contact");
+});
 
 app.listen(3000, function(){
     console.log("server started on port 3000");
