@@ -80,6 +80,10 @@ body {
  
 }
 
+.about_container .box{
+  margin-bottom: 10px;
+}
+
  #About h2 {
   color: #1c00b5;
  }
@@ -372,10 +376,11 @@ footer p {
   .about_container{
   flex-direction: column;
   justify-content: normal;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
  
     
     }
+
 
 .cows{
   max-width: 100%;
@@ -394,7 +399,7 @@ footer p {
 }
 
 .contact_box_right{
-  font-size: .5rem;
+  font-size: .6rem;
 }
 
 }
