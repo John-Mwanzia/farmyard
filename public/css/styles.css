@@ -22,9 +22,10 @@ body {
 }
 .homepage{
      /* height: 630px;  */
-     min-height: 90vh;
-    width: 100%;
-    background-image: url(/images/cows.jpg);  
+   min-height: 90vh;
+   width: 100%;
+    background-image: url(/images/tobias-schmucker-5arv1V8szIs-unsplash.jpg);
+    /* background-image: url(/images/subtle-cinematics-V4Mo8UYKRvY-unsplash.jpg);  */
   /* Center and scale the image nicely */
     background-position: center; 
   background-repeat: no-repeat;
@@ -39,6 +40,7 @@ body {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    padding: 1rem;
   
   }
   
@@ -84,8 +86,8 @@ body {
   margin-bottom: 10px;
 }
 
- #About h2 {
-  color: #1c00b5;
+ #About {
+  margin-top: 3rem;;
  }
 
 .cows{
@@ -128,7 +130,9 @@ body {
 }
 .livestock{
   text-align: center;
+  text-decoration: underline;
   color: #1c00b5;
+  margin-top: 1rem;
 
 }
 
