@@ -24,10 +24,12 @@ body {
      /* height: 630px;  */
    min-height: 90vh;
    width: 100%;
-    background-image: url(/images/tobias-schmucker-5arv1V8szIs-unsplash.jpg);
+   /* subtle-cinematics-V4Mo8UYKRvY-unsplash (2).jpg */
+    /* background-image: url(/images/tobias-schmucker-5arv1V8szIs-unsplash.jpg); */
     /* background-image: url(/images/subtle-cinematics-V4Mo8UYKRvY-unsplash.jpg);  */
+    background-image: url(/images/subtle-cinematics-V4Mo8UYKRvY-unsplash.jpg); 
   /* Center and scale the image nicely */
-    background-position: center; 
+    /* background-position: center;  */
   background-repeat: no-repeat;
    background-size:cover;
 }
