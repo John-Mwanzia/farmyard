@@ -89,8 +89,14 @@ body {
 }
 
  #About {
-  margin-top: 3rem;;
+  margin-top: 3rem;
  }
+
+ #About h1 {
+  color: #1c00b5;text-align: center; text-decoration: underline;
+ }
+
+ 
 
 .cows{
     transform: scale(1);
