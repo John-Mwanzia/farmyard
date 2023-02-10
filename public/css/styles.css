@@ -262,12 +262,12 @@ ul{
 }
 
 .contact_box_left{
-  /* flex-basis: 60%; */
+  flex-basis: 60%;
   padding: 40px 60px;
 
 }
 .contact_box_right{
-  /* flex-basis: 40%; */
+  flex-basis: 40%;
   padding: 40px 60px;
   background: #1c00b5;
   color: #fff;
