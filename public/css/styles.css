@@ -159,8 +159,6 @@ body {
 }
 .milk{
   padding: 20px;
-  /* transform: scale(0.95); */
-  /* transition: 0.3s ease-in-out;  */
   transition: box-shadow .3s;
   transition-duration: 0.3s;
   transition-timing-function: ease;
@@ -235,7 +233,7 @@ body {
   
 }
 #meat:hover{
-  /* transform: scale(1); */
+
   box-shadow: 0 0 35px -2px rgb(0, 0, 0 , 20%);
   cursor: pointer;
 }
